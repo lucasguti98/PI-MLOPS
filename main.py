@@ -3,7 +3,7 @@ import pandas as pd
 app = FastAPI()
 
 #Endpoint 1
-@app.get("/Endpoint 1/{developer}")
+@app.get("/Endpoint1/{developer}")
 def developer( developer : str ):   
     df_endpoint1 = pd.read_csv("df_endpoint1.csv")
     developer_data = df_endpoint1[df_endpoint1["developer"] == developer]
