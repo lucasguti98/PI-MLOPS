@@ -30,7 +30,7 @@ def  UserForGenre( genre : str ):
     return genre_data_dict
 
 #Endpoint 4
-@app.get("/best_developer_year/{developer}")
+@app.get("/best_developer_year/{year}")
 def best_developer_year( año : int ):
     df_endpoint4 = pd.read_csv("df_endpoint4.csv")
     developer_data = df_endpoint4[df_endpoint4["año"] == año]
