@@ -3,7 +3,7 @@ import pandas as pd
 app = FastAPI()
 
 #Endpoint 1
-@app.get("/Endpoint1/{developer}")
+@app.get("/developer/{developer}")
 def developer( developer : str ):   
     df_endpoint1 = pd.read_csv("df_endpoint1.csv")
     developer_data = df_endpoint1[df_endpoint1["developer"] == developer]
@@ -49,7 +49,7 @@ def sentiment_analysis(year : int):
 
 
 #Endpoint Recommendation system
-@app.get("/Recommendation_system/{Game}")
+@app.get("/recomendacion_juego/{Game}")
 def recomendacion_juego(Game : str):   
     df_RS = pd.read_csv("sistema_recomendacion.csv")
     RS_data = df_RS[df_RS["Game"] == Game]
