@@ -15,7 +15,7 @@ El deployment se realiza con Render.
 
 ## Deployment de la API
 
-Para llevar a cabo el despliegue de la API en mi proyecto de MLOps, opté por una combinación de herramientas y técnicas que garantizaran un proceso eficiente y sin complicaciones.
-En primer lugar, utilicé FastAPI como el marco principal para el desarrollo de la API. Para manejar las solicitudes entrantes, integré Uvicorn como el servidor ASGI. Para llevar la API en línea, me decidí por Render. Su enfoque en la automatización del flujo de trabajo de implementación simplificó enormemente el proceso de despliegue, permitiéndome concentrarme en el desarrollo de la API sin preocuparme por la infraestructura subyacente.
-Con el objetivo de optimizar la funcionalidad y el rendimiento de la API generee DataFrames precomputados para los endpoints solicitados. Esta forma de procesarlos me permitió reducir la carga computacional en tiempo de ejecución y proporcionar respuestas más rápidas.
+Para llevar a cabo el despliegue de la API opté por una combinación de herramientas y técnicas que garantizaran un proceso eficiente y sin complicaciones.
+En primer lugar, utilicé FastAPI como el marco principal para el desarrollo de la API. Para manejar las solicitudes entrantes, integré Uvicorn como el servidor ASGI. Para llevar la API en línea, me decidí por Render como plataforma de alojamiento y despliegue ya que ofrece una infraestructura confiable y escalable, lo que simplificó la implementación y la gestión de la API de gran manera.
+Con el objetivo de optimizar la funcionalidad y el rendimiento de la API generé DataFrames precomputados para los endpoints solicitados. Esta forma de procesarlos me permitió reducir la carga computacional en tiempo de ejecución y proporcionar respuestas más rápidas.
 
